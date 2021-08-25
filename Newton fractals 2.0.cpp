@@ -185,12 +185,12 @@ private:
 
 complex f(complex z)
 {
-	return cosh(z) - 1;
+	return pow(z, 3) - 1;
 }
 
 complex Df(complex z)
 {
-	return sinh(z) ;
+	return 3 * pow(z, 2);
 }
 
 complex newton(complex z)
@@ -249,9 +249,3 @@ int main()
 	cin.ignore();
 
 }
-
-/*int main() 
-{
-	complex z(3, 0);
-	cout << sinh(z);
-}*/
